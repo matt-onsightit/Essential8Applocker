@@ -1,5 +1,5 @@
 <AppLockerPolicy Version="1">
-  <RuleCollection Type="Exe" EnforcementMode="NotConfigured">
+  <RuleCollection Type="Exe" EnforcementMode="Enabled">
     <FilePathRule Id="921cc481-6e17-4653-8f75-050b80acca20" Name="(Default Rule) All files located in the Program Files folder" Description="Allows members of the Everyone group to run applications that are located in the Program Files folder." UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePathCondition Path="%PROGRAMFILES%\*" />
@@ -23,7 +23,7 @@
       </Exceptions>
     </FilePathRule>
   </RuleCollection>
-  <RuleCollection Type="Msi" EnforcementMode="NotConfigured">
+  <RuleCollection Type="Msi" EnforcementMode="Enabled">
     <FilePublisherRule Id="b7af7102-efde-4369-8a89-7a6a392d1473" Name="(Default Rule) All digitally signed Windows Installer files" Description="Allows members of the Everyone group to run digitally signed Windows Installer files." UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="*" ProductName="*" BinaryName="*">
@@ -42,7 +42,7 @@
       </Conditions>
     </FilePathRule>
   </RuleCollection>
-  <RuleCollection Type="Script" EnforcementMode="NotConfigured">
+  <RuleCollection Type="Script" EnforcementMode="Enabled">
     <FilePathRule Id="06dce67b-934c-454f-a263-2515c8796a5d" Name="(Default Rule) All scripts located in the Program Files folder" Description="Allows members of the Everyone group to run scripts that are located in the Program Files folder." UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePathCondition Path="%PROGRAMFILES%\*" />
@@ -96,7 +96,7 @@
       </Exceptions>
     </FilePathRule>
   </RuleCollection>
-  <RuleCollection Type="Appx" EnforcementMode="NotConfigured">
+  <RuleCollection Type="Appx" EnforcementMode="Enabled">
     <FilePublisherRule Id="5b541c67-eff6-4582-a7c6-aa3ae981c541" Name="Signed by Microsoft Corporation" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="*" BinaryName="*">
