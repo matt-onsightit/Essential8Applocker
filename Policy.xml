@@ -99,14 +99,14 @@
   <RuleCollection Type="Appx" EnforcementMode="Enabled">
     <FilePublisherRule Id="5b541c67-eff6-4582-a7c6-aa3ae981c541" Name="Signed by Microsoft Corporation" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
-        <FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="*" BinaryName="*">
+        <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="*" BinaryName="*">
           <BinaryVersionRange LowSection="*" HighSection="*" />
         </FilePublisherCondition>
       </Conditions>
     </FilePublisherRule>
     <FilePublisherRule Id="b5455621-487a-43eb-bbd8-f1ca8255ece6" Name="Signed by Microsoft Windows" Description="Allows members of the Everyone group to run packaged apps that are signed." UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
-        <FilePublisherCondition PublisherName="[Publisher] CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="*" BinaryName="*">
+        <FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="*" BinaryName="*">
           <BinaryVersionRange LowSection="0.0.0.0" HighSection="*" />
         </FilePublisherCondition>
       </Conditions>
