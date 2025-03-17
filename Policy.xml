@@ -22,7 +22,6 @@
       </Conditions>
     </FilePublisherRule>
   </RuleCollection>
-  </RuleCollection>
   <RuleCollection Type="Dll" EnforcementMode="Enabled">
     <FilePathRule Id="3737732c-99b7-41d4-9037-9cddfb0de0d0" Name="(Default Rule) All DLLs located in the Program Files folder" Description="Allows members of the Everyone group to load DLLs that are located in the Program Files folder." UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
