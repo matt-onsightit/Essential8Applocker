@@ -1,0 +1,11 @@
+<AppLockerPolicy Version="1">
+  <RuleCollection Type="Appx" EnforcementMode="Enabled">
+    <FilePublisherRule Id="54b3f9b1-5e8d-4587-aebf-53a4ed93a5d4" Name="5319275A.WhatsAppDesktop, from WhatsApp Inc." Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="CN=24803D75-212C-471A-BC57-9EF86AB91435" ProductName="5319275A.WhatsAppDesktop" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+  </RuleCollection>
+</AppLockerPolicy>
