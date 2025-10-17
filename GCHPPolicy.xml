@@ -52,6 +52,14 @@
         <FilePathCondition Path="*" />
       </Conditions>
     </FilePathRule>
+    <FileHashRule Id="0eeb2a26-0fa7-4c5f-a9c7-7e225bffaeba" Name="Onity DLL" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0xAA21085B5D1D0C8454364F7973CA06814EB019BA4885A29196B3E2141FDFF87C" SourceFileName="Tutil32.dll" SourceFileLength="244984" />
+          <FileHash Type="SHA256" Data="0x1044CEE50B283A1FC0B08263922E78D48485E818D44D96AC179FBA66EBE94BF8" SourceFileName="_ISREG32.DLL" SourceFileLength="49152" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
   </RuleCollection>
   <RuleCollection Type="Exe" EnforcementMode="Enabled">
     <FilePublisherRule Id="2c4e639e-e99d-4971-874e-93a91fbd9742" Name="ScreenConnect" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
@@ -83,6 +91,15 @@
         <FilePathCondition Path="*" />
       </Conditions>
     </FilePathRule>
+    <FileHashRule Id="4b2b6dbb-3052-4725-bec6-f217851d6291" Name="Onity Apps" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x13678B90607608D7B94544FD2849FE4EC60CFF4E7A3473BD7FFB66067A3B1C7D" SourceFileName="HT28.exe" SourceFileLength="5020160" />
+          <FileHash Type="SHA256" Data="0xA1F0EB6F9815E5755BE33398ED473D4CCD33E83BB65C25E3F3665DC54B792639" SourceFileName="ToolBack.exe" SourceFileLength="892928" />
+          <FileHash Type="SHA256" Data="0x86E98898C56003F842E47B555449265206A5A08C662480C294079E475A9C6059" SourceFileName="tools.exe" SourceFileLength="1265664" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
   </RuleCollection>
   <RuleCollection Type="Msi" EnforcementMode="Enabled">
     <FilePublisherRule Id="b7af7102-efde-4369-8a89-7a6a392d1473" Name="(Default Rule) All digitally signed Windows Installer files" Description="Allows members of the Everyone group to run digitally signed Windows Installer files." UserOrGroupSid="S-1-1-0" Action="Allow">
@@ -134,4 +151,3 @@
     </FilePathRule>
   </RuleCollection>
 </AppLockerPolicy>
-
